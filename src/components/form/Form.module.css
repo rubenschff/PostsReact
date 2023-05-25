@@ -1,0 +1,40 @@
+.formContainer {
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+
+.formContainer input[type='submit']{
+    border-radius: 10px;
+    background-color: aliceblue;
+    color: #5e6ffb;
+    border: 1px solid #5e6ffb;
+    min-width: 100px;
+    min-height: 2.5em;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.formContainer form{
+    display: flex;
+    flex-direction: column;
+}
+
+.formContainer input[type='submit']:hover{
+    background-color: #5e6ffb;
+    color: aliceblue;
+}
+
+.formContainer p {
+    margin-top: 1em;
+}
+
+.formContainer p a {
+    color: chocolate;
+    font-weight: bold;
+}

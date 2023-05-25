@@ -1,0 +1,13 @@
+.footer{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5e6ffb;
+    color: aliceblue;
+}
+
+.footer p {
+    font-weight: bold;
+
+}
