@@ -1,12 +1,17 @@
-import {useState} from "react";
+import {useContext, useState} from "react";
 import Input from "../../components/form/Input.jsx";
 
 import styles from '../../components/form/Form.module.css'
 import {Link} from "react-router-dom";
+
+/*Contexts*/
+import {Context} from "../../context/UserContext.jsx";
+
 export default function Register(){
 
     //objeto usuario
     const [user, setUser] = useState({})
+    const { register } = useContext(Context)
 
     //adiciona ao usuário cada campo do formulário
     function handleChange(e){
@@ -16,7 +21,7 @@ export default function Register(){
     //envia os dados ao clicar em cadastrar
     function handleSubmit(e) {
         e.preventDefault() //não recarrega a página
-        console.log(user)
+        register(user)
     }
 
 
@@ -44,13 +49,6 @@ export default function Register(){
                     type="password"
                     name="password"
                     placeHolder="Digite a sua senha"
-                    handleOnChange={handleChange}
-                />
-                <Input
-                    text="Confirme a senha"
-                    type="password"
-                    name="confirmPassword"
-                    placeHolder="Confirme a sua senha"
                     handleOnChange={handleChange}
                 />
                 <input type="submit" value="Cadastrar"/>

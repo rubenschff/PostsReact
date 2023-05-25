@@ -1,0 +1,22 @@
+
+.message{
+    width: 60%;
+    padding: 1em;
+    border: 1px solid #000;
+    margin: 1.2em auto 0;
+    text-align: center;
+    border-radius: 8px;
+
+}
+
+.success {
+    color: darkseagreen;
+    background-color: aliceblue;
+    border-color: darkseagreen;
+}
+
+.error {
+    color: darkred;
+    background-color: aliceblue;
+    border-color: darkred;
+}

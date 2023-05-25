@@ -5,13 +5,18 @@ import Login from "./pages/Auth/Login.jsx";
 import NavBar from "./components/layout/NavBar.jsx";
 import Footer from "./components/layout/Footer.jsx";
 import Container from "./components/layout/Container.jsx";
+import Message from "./components/layout/Message.jsx";
 
+/*Context*/
+import {UserProvider} from "./context/UserContext.jsx";
 
 function App() {
 
     return (
         <Router>
+            <UserProvider>
             <NavBar/>
+                <Message/>
             <Container>
                 <Routes>
                     <Route  path="/" element={<Home/>}/>
@@ -20,6 +25,7 @@ function App() {
                 </Routes>
             </Container>
             <Footer/>
+            </UserProvider>
         </Router>
     )
 }
