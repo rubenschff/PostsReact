@@ -25,6 +25,7 @@ export default function useAuth(){
     //registro de usuário
     async function register(user){
 
+        console.log(user)
         let msgText = 'Cadastro relizado com sucesso'
         let msgType = 'success'
 
@@ -35,18 +36,22 @@ export default function useAuth(){
             })
 
             //se sucesso
-            AuthUser(data)
-        }catch (e) {
+            await AuthUser(data)
 
+        }catch (e) {
             console.log(e)
-            if(e.response.data.body.name){
+
+            if(e.response.data.error){
+
+            }
+            if(!user.name){
                 msgText = 'O campo nome é obrigatório'
-            }else if (e.response.data.body.email){
+            }else if (!user.email){
                 msgText = 'O email é obrigatório'
-            }else if (e.response.data.body.password){
+            }else if (!user.password){
                 msgText = 'A senha é obrigatória'
             }else {
-                msgText = 'Preencha todos os campos'
+                msgText = e.response.data.error
             }
             msgType = 'error'
         }

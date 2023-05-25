@@ -9,6 +9,7 @@ import Message from "./components/layout/Message.jsx";
 
 /*Context*/
 import {UserProvider} from "./context/UserContext.jsx";
+import Profile from "./pages/User/Profile.jsx";
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
                     <Route  path="/" element={<Home/>}/>
                     <Route  path="/register" element={<Register/>}/>
                     <Route  path="/login" element={<Login/>}/>
+                    <Route path="/user/profile" element={<Profile/>}/>
                 </Routes>
             </Container>
             <Footer/>

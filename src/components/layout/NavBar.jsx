@@ -22,8 +22,12 @@ export default function NavBar(){
                 </li>
                 {authenticated ?
                     (<>
-                <li>
-                        <li onClick={logout}>Sair</li>
+                        <li>
+                            <Link to="/user/profile">Perfil</Link>
+                        </li>
+                        <li onClick={logout}>
+                            <Link to="/">Sair</Link>
+                        </li>
                     </>)
                     :
                     (<>
