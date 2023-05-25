@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Routes, Route, Link, Navigate} from "react-router-dom";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import Register from "./pages/Auth/Register.jsx";
 import Login from "./pages/Auth/Login.jsx";
