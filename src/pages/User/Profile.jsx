@@ -9,7 +9,7 @@ import api from "../../utils/api.jsx";
 export default function Profile() {
 
     const [user, setUser] = useState({})
-    const [token] = useState(localStorage.getItem('token' || ''))
+    const [token] = useState(localStorage.getItem('token') || '')
     const {setMessage} = flashMessage()
 
     function handleChange(e){

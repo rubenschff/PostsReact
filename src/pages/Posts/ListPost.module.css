@@ -1,0 +1,72 @@
+.post_list_header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.post_list_container{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    align-items: center;
+}
+
+.post_list_row {
+    border: 1px solid #5e6ffb;
+    border-radius: 8px;
+    padding: 1em;
+    margin: 1em;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.post_list_row span {
+    min-width: 100px;
+}
+
+.post_list_row h2 {
+    display: flex;
+    margin: 0.5em 0 0.2em 0;
+    font-style: italic ;
+    font-size: 1.3em;
+    color: #5e6ffb;
+}
+
+.post_list_row .autor {
+    display: flex;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.post_list_row .autor p{
+    display: flex;
+    margin-right: 0.5em;
+    text-align: center;
+    border: none;
+}
+
+.post_list_row .actions {
+    display: flex;
+    justify-content: left;
+    margin-top: 1em;
+    gap: 15px;
+}
+
+.post_list_row .actions a {
+    margin: 0;
+}
+
+.post_list_row .actions button {
+    min-width: 120px;
+    padding: 0.3em 0.8em;
+    border-radius: 8px;
+    color: #ffffff;
+    background-color: #D01E1EFF;
+    border: none;
+    font-weight: bold;
+    font-family: inherit;
+    cursor: pointer;
+}

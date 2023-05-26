@@ -1,0 +1,33 @@
+
+.postsContainer h1{
+    text-align: center;
+}
+
+.postsContainer ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 15px;
+    margin: 1em 1em;
+}
+
+.postsContainer li, .postsContainer a {
+
+    text-align: center;
+    justify-content: center;
+    min-width: 120px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #5e6ffb;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 0.3em 0.8em;
+    border-radius: 8px;
+}
+
+.postsContainer a{
+    margin: 0 auto;
+}
+

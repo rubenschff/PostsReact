@@ -23,6 +23,9 @@ export default function NavBar(){
                 {authenticated ?
                     (<>
                         <li>
+                            <Link to="/posts">Meus posts</Link>
+                        </li>
+                        <li>
                             <Link to="/user/profile">Perfil</Link>
                         </li>
                         <li onClick={logout}>

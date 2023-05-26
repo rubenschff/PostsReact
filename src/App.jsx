@@ -10,6 +10,9 @@ import Message from "./components/layout/Message.jsx";
 /*Context*/
 import {UserProvider} from "./context/UserContext.jsx";
 import Profile from "./pages/User/Profile.jsx";
+import Posts from "./pages/Posts/Posts.jsx";
+import AddPost from "./pages/Posts/AddPost.jsx";
+import ListPost from "./pages/Posts/ListPost.jsx";
 
 function App() {
 
@@ -21,9 +24,14 @@ function App() {
             <Container>
                 <Routes>
                     <Route  path="/" element={<Home/>}/>
-                    <Route  path="/register" element={<Register/>}/>
-                    <Route  path="/login" element={<Login/>}/>
-                    <Route path="/user/profile" element={<Profile/>}/>
+                    <Route  path="register" element={<Register/>}/>
+                    <Route  path="login" element={<Login/>}/>
+                    <Route path="user/profile" element={<Profile/>}/>
+                    <Route path="posts" element={<Posts/>}>
+                        <Route path="list" element={<ListPost/>}/>
+                        <Route path="add" element={<AddPost/>}/>
+                    </Route>
+
                 </Routes>
             </Container>
             <Footer/>
