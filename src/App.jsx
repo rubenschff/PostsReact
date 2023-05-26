@@ -13,6 +13,7 @@ import Profile from "./pages/User/Profile.jsx";
 import Posts from "./pages/Posts/Posts.jsx";
 import AddPost from "./pages/Posts/AddPost.jsx";
 import ListPost from "./pages/Posts/ListPost.jsx";
+import EditPost from "./pages/Posts/EditPost.jsx";
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
                     <Route  path="register" element={<Register/>}/>
                     <Route  path="login" element={<Login/>}/>
                     <Route path="user/profile" element={<Profile/>}/>
+                    <Route path="edit/:id" element={<EditPost/>}/>
                     <Route path="posts" element={<Posts/>}>
                         <Route path="list" element={<ListPost/>}/>
                         <Route path="add" element={<AddPost/>}/>

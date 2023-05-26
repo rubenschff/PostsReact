@@ -29,7 +29,7 @@ export default function Profile() {
 
         const data = await api.patch('/usuario', user, {
             headers: {
-                Authorization: JSON.parse(token)
+                Authorization: `Bearer ${JSON.parse(token)}`
             }
         }).then((response) => {
 
@@ -48,7 +48,7 @@ export default function Profile() {
 
         api.get('/usuario',{
             headers:{
-                Authorization: JSON.parse(token)
+                Authorization: `Bearer ${JSON.parse(token)}`
             }
         }).then((response) =>{
             setUser(response.data)

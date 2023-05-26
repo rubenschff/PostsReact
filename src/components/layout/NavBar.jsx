@@ -23,7 +23,7 @@ export default function NavBar(){
                 {authenticated ?
                     (<>
                         <li>
-                            <Link to="/posts">Meus posts</Link>
+                            <Link to="posts/list">Meus posts</Link>
                         </li>
                         <li>
                             <Link to="/user/profile">Perfil</Link>

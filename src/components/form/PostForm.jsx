@@ -1,6 +1,7 @@
 import {useState} from "react";
 import formStyles from './Form.module.css'
 import Input from "./Input.jsx";
+import TextArea from "./TextArea.jsx";
 
 export default function PostForm({handleSubmit, postData, btnText}) {
 
@@ -34,7 +35,7 @@ export default function PostForm({handleSubmit, postData, btnText}) {
                 handleOnChange={handleChange}
                 value={post.autor || ''}
             />
-            <Input
+            <TextArea
                 text="Conteudo"
                 type="text"
                 name="conteudo"

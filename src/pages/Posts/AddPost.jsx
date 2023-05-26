@@ -21,7 +21,7 @@ export default function AddPost() {
 
         const data = await api.post('posts', post, {
             headers:{
-                Authorization: JSON.parse(token)
+                Authorization: `Bearer ${JSON.parse(token)}`
             }
         }).then((response) =>{
             navigate('/posts/list')

@@ -19,3 +19,13 @@
 .formControl input::placeholder{
     color: #7b7b7b;
 }
+
+.formControl textarea{
+    padding: .7em;
+    border: 1px solid #5e6ffb;
+    border-radius: 8px;
+}
+
+.formControl textarea::placeholder{
+    color: #7b7b7b;
+}
