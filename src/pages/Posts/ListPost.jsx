@@ -46,7 +46,7 @@ export default function ListPost() {
     return (
         <section>
             <div className={styles.post_list_header}>
-                {posts.length > 0 ?
+                {posts &&
                     (
                         <div className={styles.post_list_container}>
                             {
@@ -71,9 +71,7 @@ export default function ListPost() {
 
                             }
                         </div>
-                    )
-                    :
-                    (<h1>Você não possui nenhum post cadastrado</h1>)}
+                    )}
             </div>
         </section>
     )

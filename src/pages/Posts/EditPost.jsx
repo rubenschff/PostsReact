@@ -45,7 +45,9 @@ export default function EditPost(){
                     Authorization: `Bearer ${JSON.parse(token)}`
                 }
             }).then((response) => {
-                setPost(response.data)
+                if (response.data.length > 0){
+                    setPost(response.data[0])
+                }
             })
 
     },[token])
@@ -54,7 +56,7 @@ export default function EditPost(){
     return(
         <section className={styles.edit_header}>
             <div>
-                <h1>Editanto o post do Autor: {post.autor}</h1>
+                <h1>Editando post do autor: {post.autor}</h1>
                 {post.autor && (
                     <PostForm handleSubmit={updatePost} btnText="Atualizar" postData={post}/>
                 )}

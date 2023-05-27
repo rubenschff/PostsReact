@@ -41,9 +41,7 @@ export default function useAuth(){
         }catch (e) {
             console.log(e)
 
-            if(e.response.data.error){
 
-            }
             if(!user.name){
                 msgText = 'O campo nome é obrigatório'
             }else if (!user.email){

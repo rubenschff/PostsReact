@@ -20,20 +20,20 @@ export default function PostForm({handleSubmit, postData, btnText}) {
     return(
         <form onSubmit={submit} className={formStyles.formContainer}>
             <Input
-                text="Titulo"
-                type="text"
-                name="titulo"
-                placeHolder="Informe o titulo"
-                handleOnChange={handleChange}
-                value={post.titulo || ''}
-            />
-            <Input
                 text="Autor"
                 type="text"
                 name="autor"
                 placeHolder="Informe o autor"
                 handleOnChange={handleChange}
                 value={post.autor || ''}
+            />
+            <Input
+                text="Titulo"
+                type="text"
+                name="titulo"
+                placeHolder="Informe o titulo"
+                handleOnChange={handleChange}
+                value={post.titulo || ''}
             />
             <TextArea
                 text="Conteudo"
